@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.ennovasoft.mdcomponents.adapters.ComponentAdapter;
 import com.ennovasoft.mdcomponents.fragments.BottomNavigationBarFragment;
 import com.ennovasoft.mdcomponents.fragments.ButtonFragment;
+import com.ennovasoft.mdcomponents.fragments.SnackBarFragment;
 import com.ennovasoft.mdcomponents.utils.Component;
 import com.ennovasoft.mdcomponents.utils.Constants;
 import com.ennovasoft.mdcomponents.utils.OnClickListener;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         mAdapter = new ComponentAdapter(new ArrayList<>(), this);
         mAdapter.add(ButtonFragment.getmInstance());
         mAdapter.add(BottomNavigationBarFragment.getmInstance());
+        mAdapter.add(SnackBarFragment.getmInstance());
     }
 
     private void configRecyclerView() {
