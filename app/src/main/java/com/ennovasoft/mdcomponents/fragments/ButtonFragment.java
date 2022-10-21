@@ -1,4 +1,4 @@
-package com.ennovasoft.mdcomponents;
+package com.ennovasoft.mdcomponents.fragments;
 
 import android.os.Bundle;
 
@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.ennovasoft.mdcomponents.R;
 import com.ennovasoft.mdcomponents.utils.Component;
 import com.ennovasoft.mdcomponents.utils.Constants;
 
@@ -27,16 +28,16 @@ public class ButtonFragment extends Fragment {
 
     Unbinder mUnbinder;
 
-    public ButtonFragment() {
-        // Required empty public constructor
-    }
-
     public static Component getmInstance() {
         mInstance = new Component();
         mInstance.setName(TAG);
         mInstance.setPhotoRes(R.drawable.img_button);
         mInstance.setType(Constants.SCROLL);
         return mInstance;
+    }
+
+    public ButtonFragment() {
+        // Required empty public constructor
     }
 
     @Override
