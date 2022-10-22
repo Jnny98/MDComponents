@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 
 import com.ennovasoft.mdcomponents.fragments.BottomNavigationBarFragment;
 import com.ennovasoft.mdcomponents.fragments.ButtonFragment;
+import com.ennovasoft.mdcomponents.fragments.FloatingActionButtonFragment;
 import com.ennovasoft.mdcomponents.fragments.SnackBarFragment;
 import com.ennovasoft.mdcomponents.fragments.TextFieldFragment;
 
@@ -36,6 +37,10 @@ public class CommonUtils {
 
             case SnackBarFragment.TAG:
                 fragment = new SnackBarFragment();
+                break;
+
+            case FloatingActionButtonFragment.TAG:
+                fragment = new FloatingActionButtonFragment();
                 break;
         }
 
