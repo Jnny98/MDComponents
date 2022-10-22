@@ -10,6 +10,7 @@ import com.ennovasoft.mdcomponents.adapters.ComponentAdapter;
 import com.ennovasoft.mdcomponents.fragments.BottomNavigationBarFragment;
 import com.ennovasoft.mdcomponents.fragments.ButtonFragment;
 import com.ennovasoft.mdcomponents.fragments.SnackBarFragment;
+import com.ennovasoft.mdcomponents.fragments.TextFieldFragment;
 import com.ennovasoft.mdcomponents.utils.Component;
 import com.ennovasoft.mdcomponents.utils.Constants;
 import com.ennovasoft.mdcomponents.utils.OnClickListener;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         mAdapter.add(ButtonFragment.getmInstance());
         mAdapter.add(BottomNavigationBarFragment.getmInstance());
         mAdapter.add(SnackBarFragment.getmInstance());
+        mAdapter.add(TextFieldFragment.getmInstance());
     }
 
     private void configRecyclerView() {

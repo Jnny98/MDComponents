@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import com.ennovasoft.mdcomponents.fragments.BottomNavigationBarFragment;
 import com.ennovasoft.mdcomponents.fragments.ButtonFragment;
 import com.ennovasoft.mdcomponents.fragments.SnackBarFragment;
+import com.ennovasoft.mdcomponents.fragments.TextFieldFragment;
 
 public class CommonUtils {
 
@@ -23,6 +24,9 @@ public class CommonUtils {
             //SCROLL
             case ButtonFragment.TAG:
                 fragment = new ButtonFragment();
+                break;
+            case TextFieldFragment.TAG:
+                fragment = new TextFieldFragment();
                 break;
 
             //STATIC
